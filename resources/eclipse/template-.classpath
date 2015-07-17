@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	%EXTRA_SRC%
+	<classpathentry excluding="assets/|views/" kind="src" path="%SRC%"/>
+	<classpathentry kind="src" path="%SRC%/views"/>
+	<classpathentry kind="src" path="%SRC%/assets"/>
+	<classpathentry kind="output" path="%CLASSES_OUTPUT%"/>
+	%TEST_CLASSPATH%
+	%MODULES%
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	%CLASSPATH%
+</classpath>

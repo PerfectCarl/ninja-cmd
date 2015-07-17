@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="ninja-cmd/target/ninja-cmd.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/ninja-cmd/exportjar.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=ninja-cmd/src"/>
+        <javaElement handleIdentifier="=ninja-cmd/resources"/>
+        <file path="/ninja-cmd/.project"/>
+        <file path="/ninja-cmd/.classpath"/>
+        <file path="/ninja-cmd/deps.txt"/>
+        <file path="/ninja-cmd/ivy.xml"/>
+    </selectedElements>
+</jardesc>

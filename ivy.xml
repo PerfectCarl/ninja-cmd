@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info
+        organisation="ninjaframework"
+        module="ninja-cmd"
+        status="integration">
+	</info>
+	<configurations>
+	    <conf name="compile" description="used for building"/>
+	</configurations>
+	<dependencies>
+	 	<dependency org="org.zeroturnaround" name="zt-exec" rev="1.8"/>
+	 	<dependency org="ch.qos.logback" name="logback-classic" rev="1.1.3" conf="compile->default"/> 	 
+
+		<dependency org="org.apache.commons" name="commons-lang3" rev="3.4"/>
+		<dependency org="commons-io" name="commons-io" rev="2.4" conf="compile->default"/>
+		
+		<dependency org="org.apache.ivy" name="ivy" rev="2.4.0" conf="compile->default"/>
+		
+		<dependency org="org.yaml" name="snakeyaml" rev="1.15"/>
+		
+		<dependency org="com.googlecode.json-simple" name="json-simple" rev="1.1.1">
+		  <exclude org="org.hamcrest" name="hamcrest-core" />
+		  <exclude org="junit" name="junit" />
+		</dependency>
+		<dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.7.7"/>
+		
+		<dependency org="org.eclipse.jetty.websocket" name="websocket-server" rev="9.2.10.v20150310"/>
+		<dependency org="org.eclipse.jdt.core.compiler" name="ecj" rev="4.4.2" conf="compile->default"/>
+		<dependency org="org.eclipse.xtend" name="org.eclipse.xtend.core" rev="2.8.2"/>
+		  
+	</dependencies>  
+</ivy-module>

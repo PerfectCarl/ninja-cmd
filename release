@@ -1,0 +1,10 @@
+
+rm -rf target/lib
+
+java -jar ~/.ivy2/cache/org.apache.ivy/ivy/jars/ivy-2.4.0.jar -ivy ivy.xml -types jar -retrieve "target/lib/[artifact](-[classifier])-[revision].[ext]"
+java -jar ~/.ivy2/cache/org.apache.ivy/ivy/jars/ivy-2.4.0.jar -ivy ivy.xml -types bundle -retrieve "target/lib/[artifact](-[classifier])-[revision].[ext]"
+
+rm -rf target/create 
+rm -rf target/eclipse
+cp -R resources/create target/ 
+cp -R resources/eclipse target/ 

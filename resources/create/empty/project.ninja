@@ -1,0 +1,10 @@
+# Project
+  name: %PROJECT_NAME%
+  dependencies:
+    # Ninja
+    - org.ninjaframework:ninja-standalone:5.1.3
+    # Ninja modules
+    # Application libraries
+    - org.webjars:jquery:2.1.3
+    - org.webjars:bootstrap:3.3.4
+    - com.h2database:h2:1.4.186
